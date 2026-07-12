@@ -16,7 +16,7 @@ matter met `status` (current | draft | deprecated) en `last_reviewed`
 Nederlands toegestaan voor private/homelab-repos.
 
 De volledige specificatie staat in
-[`openspec/archive/2026-07/add-docs-contract/`](https://github.com/MWest2020/handbook/tree/main/openspec/changes/add-docs-contract);
+[`openspec/archive/2026-07/add-docs-contract/`](https://github.com/MWest2020/handbook/tree/main/openspec/archive/2026-07/add-docs-contract);
 `scripts/check_contract.py` dwingt het contract af in CI.
 
 ## Importlijst
