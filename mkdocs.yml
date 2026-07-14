@@ -39,6 +39,8 @@ plugins:
           import_url: 'https://github.com/MWest2020/estafette?branch=main&docs_dir=docs/*'
         - section: Gitsweeper
           import_url: 'https://github.com/MWest2020/Gitsweeper?branch=main&docs_dir=docs/*'
+        - section: homelab
+          import_url: 'https://github.com/MWest2020/homelab?branch=main&docs_dir=docs/*'
         - section: iso-audit
           import_url: 'https://github.com/MWest2020/iso-audit?branch=main&docs_dir=docs/*'
         - section: skill-forge

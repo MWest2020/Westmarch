@@ -1,18 +1,17 @@
 ---
 status: current
-last_reviewed: 2026-07-12
+last_reviewed: 2026-07-14
 ---
 
 # Homelab
 
 De homelab-documentatie (node-overzicht, netwerkmodel, herstelvolgorde,
-terugkerende fixes) leeft in het homelab-repo en wordt uitsluitend in de
-**private build** van dit handbook geaggregeerd:
+GitOps-stappenplannen en terugkerende fixes) staat sinds 2026-07-14 gewoon
+in de publieke import: zie de sectie **homelab** in de navigatie. Letterlijke
+identifiers (hostnamen, gebruikersnamen, tailnet-namen, LAN-IP's) zijn
+geredigeerd naar generieke placeholders — de instructies zijn daardoor ook
+herbruikbaar voor wie zelf zoiets bouwt.
 
-```
-GH_TOKEN=<read-only token> uv run mkdocs build -f mkdocs.private.yml -d site-private
-```
-
-Deze publieke pagina is bewust alleen een verwijzing: topologie en
-netwerkdetails horen niet op een publieke site (zie
-[conventies](../conventies.md), publiek/privaat).
+De private build (`mkdocs.private.yml`) bestaat nog voor de repos die zelf
+privaat zijn (zeef, zeef-eval, habitat, zettelkast); homelab heeft hem niet
+meer nodig.

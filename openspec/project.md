@@ -34,10 +34,13 @@ krijgt later meer mogelijkheden, dus de gates wegen zwaarder, niet lichter.
 - **Docs bij de code.** Elk deelnemend repo heeft `/docs` volgens het contract
   (zie change `add-docs-contract`). Het handbook bevat zelf géén projectkennis,
   alleen overkoepelende pagina's (index, homelab-overzicht, conventies).
-- **Publiek/privaat gescheiden op gevoeligheid, niet op onderwerp.** Homelab-
-  topologie, VPN-/overlay-netwerkdetails, secrets-locaties en interne hostnames horen niet
-  op een publieke Pages-site. Splitsing gebeurt op repo-niveau (privaat repo =
-  private sectie), niet met per-pagina filters.
+- **Publiek/privaat gescheiden op gevoeligheid, niet op onderwerp.** Secrets-
+  locaties en credentials horen nooit op een publieke Pages-site; letterlijke
+  identifiers (hostnamen, gebruikersnamen, tailnet-namen, LAN-IP's) worden
+  geredigeerd naar generieke placeholders vóór publieke import (besluit
+  2026-07-14: homelab-docs mogen publiek, mits geredigeerd — zie change
+  `redact-homelab-docs` in het homelab-repo). Splitsing gebeurt verder op
+  repo-niveau (privaat repo = private sectie), niet met per-pagina filters.
 - **EUPL-1.2** voor publieke content, tenzij een repo al anders gelicenseerd is.
 - **Python-tooling via `uv`**, nooit pip direct.
 

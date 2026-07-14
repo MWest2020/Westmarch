@@ -23,9 +23,10 @@ Gitsweeper, iso-audit, skill-forge en workstation-security.
 
 ## Private sectie
 
-zeef en zeef-eval (Woo-convergentie, NLnet), habitat (agent-platform),
-homelab (cluster-infra) en zettelkast worden alleen in de private build
-geaggregeerd — zie [homelab/herstel](homelab/herstel.md).
+zeef en zeef-eval (Woo-convergentie, NLnet), habitat (agent-platform) en
+zettelkast worden alleen in de private build geaggregeerd. De
+homelab-docs staan sinds 2026-07-14 geredigeerd in de publieke import —
+zie [homelab/herstel](homelab/herstel.md).
 
 ## Meer
 

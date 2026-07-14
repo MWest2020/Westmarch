@@ -872,13 +872,13 @@
     "forge": "github",
     "tier": "active",
     "visibility": "public",
-    "sensitivity": "private-only",
+    "sensitivity": "public-ok",
     "has_docs": "yes",
     "has_mcp_json": "yes",
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "KERNSET (wave 1). Besluit Mark 2026-07-12: repo blijft PUBLIC; eis = nooit geheimen. Wave 1-PR bevat daarom een security-scrub (secrets/keys/credentials eruit; hostnames/topologie mogen volgens Mark blijven). Handbook-import vooralsnog private sectie: het project.md-uitgangspunt (geen interne hostnames/overlay-details op publieke Pages) staat nog; publieke import vereist een spec-aanpassing, voorstel-eerst. Geen LICENSE. Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS).",
+    "notes": "KERNSET (wave 1). Besluit Mark 2026-07-12: repo blijft PUBLIC; eis = nooit geheimen. Wave 1-PR bevat daarom een security-scrub (secrets/keys/credentials eruit; hostnames/topologie mogen volgens Mark blijven). Handbook-import vooralsnog private sectie: het project.md-uitgangspunt (geen interne hostnames/overlay-details op publieke Pages) staat nog; publieke import vereist een spec-aanpassing, voorstel-eerst. Geen LICENSE. Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Besluit 2026-07-14: docs geredigeerd (redact-homelab-docs, reviewer+security PASS) -> publieke import; geen private build meer nodig voor homelab.",
     "contract_applied": "yes"
   },
   {
