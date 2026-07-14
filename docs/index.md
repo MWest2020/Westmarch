@@ -1,6 +1,6 @@
 ---
 status: current
-last_reviewed: 2026-07-13
+last_reviewed: 2026-07-14
 ---
 
 # Handbook
@@ -14,19 +14,15 @@ actueel.
 
 ## Uitgelicht
 
-- **Wanderer** — sovereignty checker voor organisaties (NLnet-traject)
-- **estafette** — PoC-overdraagbaarheids-assessment (NLnet-traject)
-- **wordsworth** — sovereign documentpijplijn; eerste habitat-afnemer
+- **Wanderer** — sovereignty checker voor organisaties
+- **estafette** — PoC-overdraagbaarheids-assessment
+- **wordsworth** — sovereign documentpijplijn
 
 Daarnaast publiek: ash-nazg, Billbird (+client), certswap, crible,
 Gitsweeper, iso-audit, skill-forge en workstation-security.
 
-## Private sectie
-
-zeef en zeef-eval (Woo-convergentie, NLnet), habitat (agent-platform) en
-zettelkast worden alleen in de private build geaggregeerd. De
-homelab-docs staan sinds 2026-07-14 geredigeerd in de publieke import —
-zie [homelab/herstel](homelab/herstel.md).
+Er bestaat daarnaast een private build met aanvullende secties; die wordt
+niet gepubliceerd.
 
 ## Meer
 
