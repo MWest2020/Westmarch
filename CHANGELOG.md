@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-07-14 (scrub-public-context)
+
+- Nieuwe openspec-change `scrub-public-context` na review van de live
+  publieke homepage: hub-eigen pagina's en repo-bestanden in dit publieke
+  repo mogen geen financieringstrajecten, private repo-namen of
+  redactie-metadata bevatten (twee nieuwe requirements op
+  `handbook-portal`).
+- Directe herstelactie: `docs/index.md` (trajectlabels weg,
+  private-sectie-alinea → één verwijzingszin) en
+  `docs/homelab/herstel.md` (private repo-namen en redactie-datum weg).
+- Vervolgtaken met scope-besluit: inventaris-notes, `mkdocs.private.yml`,
+  archief/seeds, git-history (zie tasks.md van de change).
+
 ## 2026-07-12 (scherpstelling na diff-review)
 
 - Spec `docs-contract` aangescherpt: (1) structuureis geldt alleen voor
