@@ -938,20 +938,6 @@
     "contract_applied": "yes"
   },
   {
-    "repo": "ithero",
-    "forge": "github",
-    "tier": "TBD",
-    "visibility": "private",
-    "sensitivity": "private-only",
-    "has_docs": "no",
-    "has_mcp_json": "no",
-    "needs_mcp_json": "no",
-    "needs_docs": "no",
-    "handbook_import": "no",
-    "notes": "Claude Code-config (skills/hooks/global instructions). claude/ en systemd/ gemigreerd naar dotfiles 2026-07-14; repo wacht op verwijdering (delete_repo-scope nodig, besluit Mark).",
-    "contract_applied": "no"
-  },
-  {
     "repo": "javascript-basics-practice",
     "forge": "github",
     "tier": "archive",
