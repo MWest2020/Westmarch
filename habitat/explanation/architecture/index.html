@@ -5250,10 +5250,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#status-vervolgstappen" class="md-nav__link">
+  <a href="#status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Status &amp; vervolgstappen
+        Status
       
     </span>
   </a>
@@ -8080,6 +8080,41 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../wordsworth/reference/evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evaluation run
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--draft"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -9201,10 +9236,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#status-vervolgstappen" class="md-nav__link">
+  <a href="#status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Status &amp; vervolgstappen
+        Status
       
     </span>
   </a>
@@ -9256,10 +9291,10 @@ het cluster; de agents draaien als K8s Jobs op de nodes, binnen de kooi.</p>
 <ul>
 <li><strong>Orchestrator</strong> — één Claude Code-sessie op de laptop (tmux). Mag: Jobs CRUD'en
   in <code>agents</code>, logs streamen, branches inspecteren, Mark aanroepen. Schrijft zelf
-  nooit productiecode. (change <code>add-orchestrator</code>, nog te doen)</li>
+  nooit productiecode. (change <code>add-orchestrator</code>, af)</li>
 <li><strong>Workers</strong> — K8s Jobs, één image (<code>claude -p</code> + <code>uv</code> + <code>git</code>). Rollen
   (builder/reviewer/security) zijn <code>.claude/agents/</code>-files in de <strong>doelrepo</strong>, niet
-  in Habitat. (change <code>add-worker-image</code>, propose)</li>
+  in Habitat. (change <code>add-worker-image</code>, af)</li>
 <li><strong>Kooi</strong> — namespace <code>agents</code>: default-deny egress + Cilium <code>toFQDNs</code>-allowlist,
   minimale RBAC, SOPS+age-secrets. (change <code>add-cage</code>, <strong>live toegepast + getest</strong>)</li>
 </ul>
@@ -9307,51 +9342,15 @@ hash-chained audit-JSONL.</p>
 <li><strong>Data</strong> — afnemer-verantwoordelijkheid (wordsworth regelt eigen idempotentie);
    Habitat garandeert alleen dat runs geen state buiten Job en branch achterlaten.</li>
 </ol>
-<h2 id="status-vervolgstappen">Status &amp; vervolgstappen</h2>
-<table>
-<thead>
-<tr>
-<th>Change</th>
-<th>Wat</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>add-cage</code></td>
-<td>namespace, egress-policy (Cilium toFQDNs), RBAC, SOPS-structuur</td>
-<td><strong>live toegepast + getest</strong></td>
-</tr>
-<tr>
-<td><code>add-worker-image</code></td>
-<td>Containerfile + entrypoint + GHCR-build</td>
-<td>propose (klaar voor implementatie)</td>
-</tr>
-<tr>
-<td><code>add-dispatch</code></td>
-<td>Job-template (<code>activeDeadlineSeconds</code>, <code>backoffLimit:0</code>) + dispatch-script</td>
-<td>nog te schrijven</td>
-</tr>
-<tr>
-<td><code>add-orchestrator</code></td>
-<td>orchestrator-<code>CLAUDE.md</code> (mandaat + escalatiematrix) + tmux-indeling</td>
-<td>nog te schrijven</td>
-</tr>
-<tr>
-<td><code>add-audit-report</code></td>
-<td>hash-chained JSONL + single-file HTML-run-rapport</td>
-<td>nog te schrijven</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Openstaand beslispunt</strong>: nu er geen egress-proxy meer is, is git-auth via een
-SSH-deploy-key (de oorspronkelijke keuze) weer mogelijk naast de PAT-over-HTTPS die
-nu gekozen is. Zie de repo-README en <code>openspec/changes/add-worker-image/</code>.</p>
-<p><strong>Definition of done (v0)</strong>: orchestrator dispatcht een builder-Job voor een triviale
-change in een testrepo → log streamt in tmux → reviewer + security volgen →
-orchestrator escaleert de merge naar Mark, mét HTML-run-rapport. Eén volledige loop.</p>
-<p>De volledige, formele specificatie staat per change onder
-<a href="../../openspec/changes/"><code>openspec/changes/</code></a>.</p>
+<h2 id="status">Status</h2>
+<p>v0 is compleet en live bewezen: kooi, worker-image, dispatch, audit-rapportage en
+orchestrator-mandaat zijn gebouwd, getest en gearchiveerd. De actuele statusbron is
+<code>openspec list</code> (open changes) en <a href="../../openspec/changes/archive/"><code>openspec/changes/archive/</code></a>
+(afgerond) — deze pagina houdt bewust geen eigen statustabel bij (die veroudert).</p>
+<p>Het eerdere beslispunt git-auth (SSH-deploy-key vs PAT-over-HTTPS) is beslecht:
+PAT-over-HTTPS via per-node secrets, live bewezen (zie add-worker-image, add-dispatch).</p>
+<p>De volledige, formele specificatie staat per capability onder
+<a href="../../openspec/specs/"><code>openspec/specs/</code></a>.</p>
 
 
 
