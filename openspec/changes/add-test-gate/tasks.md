@@ -2,9 +2,9 @@
 
 ## 1. Hub (dit repo)
 
-- [ ] 1.1 `docs/reference/test-gate.md`: per-type verify-templates (Python uv+pytest;
+- [x] 1.1 `docs/reference/test-gate.md`: per-type verify-templates (Python uv+pytest;
       infra validate/lint; shell shellcheck+yaml-lint) + checknaam-afspraak `verify`
-- [ ] 1.2 `inventory/repos.json`: veld `verify_gate` (yes|no|n/a) op de import-spokes;
+- [x] 1.2 `inventory/repos.json`: veld `verify_gate` (yes|no|n/a) op de import-spokes;
       beginwaarden uit de inventarisatie (wordsworth=yes, rest=no, habitat/homelab n.t.b.)
 
 ## 2. Uitrol naar de spokes (signaal-model, geen branch protection)
