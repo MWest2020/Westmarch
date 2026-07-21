@@ -850,9 +850,9 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "KERNSET (wave 1, besluit Mark 2026-07-12). Agent-platform; bouwwerk changes 2/3 loopt hierdoor. Publiek gezet 2026-07-14 na scrub-check (gitleaks + identifier-sweep schoon; overlay-netwerknaam gerewoord in README/project.md, naam blijft in history — laag risico, besluit Mark). Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths dispatch/,worker/,cage/,report/,orchestrator/ (fail).",
+    "notes": "KERNSET (wave 1, besluit Mark 2026-07-12). Agent-platform; bouwwerk changes 2/3 loopt hierdoor. Publiek gezet 2026-07-14 na scrub-check (gitleaks + identifier-sweep schoon; overlay-netwerknaam gerewoord in README/project.md, naam blijft in history — laag risico, besluit Mark). Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths dispatch/,worker/,cage/,report/,orchestrator/ (fail). Verify-gate uitgerold 2026-07-22 (add-test-gate): shellcheck+yaml-syntax.",
     "contract_applied": "yes",
-    "verify_gate": "no"
+    "verify_gate": "yes"
   },
   {
     "repo": "habitat-testrepo",
@@ -879,9 +879,9 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "KERNSET (wave 1). Besluit Mark 2026-07-12: repo blijft PUBLIC. Geen LICENSE. Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Besluit 2026-07-14: publieke import; geen private build meer nodig voor homelab. Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths infra-mappen (fail; warn->fail 2026-07-21, signaal-model).",
+    "notes": "KERNSET (wave 1). Besluit Mark 2026-07-12: repo blijft PUBLIC. Geen LICENSE. Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Besluit 2026-07-14: publieke import; geen private build meer nodig voor homelab. Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths infra-mappen (fail; warn->fail 2026-07-21, signaal-model). Verify-gate uitgerold 2026-07-22 (add-test-gate): terraform fmt+yaml-syntax.",
     "contract_applied": "yes",
-    "verify_gate": "no"
+    "verify_gate": "yes"
   },
   {
     "repo": "Honeypot",
@@ -1608,9 +1608,9 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "Nice-to-have (wave 2, besluit Mark 2026-07-12).  Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths skills/,src/,config/ (fail; warn->fail 2026-07-21, signaal-model).",
+    "notes": "Nice-to-have (wave 2, besluit Mark 2026-07-12).  Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths skills/,src/,config/ (fail; warn->fail 2026-07-21, signaal-model). Verify-gate uitgerold 2026-07-22 (add-test-gate): uv+pytest.",
     "contract_applied": "yes",
-    "verify_gate": "no"
+    "verify_gate": "yes"
   },
   {
     "repo": "Slackbot",
@@ -2170,8 +2170,8 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "Privaat, actieve agent-ontwikkeling; inhoud onbekend gevoelig -> fail closed. Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths config/,scripts/,sources/ (fail; warn->fail 2026-07-21, signaal-model).",
+    "notes": "Privaat, actieve agent-ontwikkeling; inhoud onbekend gevoelig -> fail closed. Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths config/,scripts/,sources/ (fail; warn->fail 2026-07-21, signaal-model). Verify-gate uitgerold 2026-07-22 (add-test-gate): uv+pytest.",
     "contract_applied": "yes",
-    "verify_gate": "no"
+    "verify_gate": "yes"
   }
 ]

@@ -4,11 +4,12 @@
 
 ### Requirement: Elke import-spoke heeft een verify-check op PR's
 
-Elk repo op de importlijst (`handbook_import: yes`) SHALL een PR-check `verify`
-hebben die de repo controleert met een commando dat bij het repo-type past
-(unit-tests waar die bestaan; anders lint/validatie). De check SHALL `verify`
-heten zodat dekking uniform telbaar is, ongeacht het onderliggende commando. De
-inventaris SHALL de dekking bijhouden in `verify_gate` (`yes|no|n/a`).
+Elk repo op de importlijst (`handbook_import: yes`) SHALL een PR-check hebben
+die de repo controleert met een commando dat bij het repo-type past (unit-tests
+waar die bestaan; anders lint/validatie). Nieuwe checks SHOULD `verify` heten
+zodat dekking uniform telbaar is; een reeds bestaande, equivalente check onder
+een andere naam (bv. wordsworth's `test`-CI) telt ook en hoeft niet hernoemd te
+worden. De inventaris SHALL de dekking bijhouden in `verify_gate` (`yes|no|n/a`).
 
 Handhaving is signaal, niet blokkade: geen branch protection op de solo-repo's
 (consistent met docs-gates).

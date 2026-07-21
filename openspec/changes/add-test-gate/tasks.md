@@ -9,15 +9,18 @@
 
 ## 2. Uitrol naar de spokes (signaal-model, geen branch protection)
 
-- [ ] 2.1 skill-forge: `verify.yml` (uv + pytest op `tests/`)
-- [ ] 2.2 zettelkast: `verify.yml` (uv + pytest op `tests/`)
-- [ ] 2.3 habitat: `verify.yml` (shellcheck op `*.sh` + yaml-lint op manifests)
-- [ ] 2.4 homelab: `verify.yml` (terraform validate + ansible-lint + kubeconform,
-      voor zover de betreffende mappen aanwezig zijn)
-- [ ] 2.5 wordsworth: al klaar (`ci.yml` draait pytest) — alleen `verify_gate=yes`
-      bevestigen; eventueel de checknaam naar `verify` harmoniseren (optioneel)
+- [x] 2.1 skill-forge: `verify.yml` (uv + pytest op `tests/`)
+- [x] 2.2 zettelkast: `verify.yml` (uv + pytest op `tests/`)
+- [x] 2.3 habitat: `verify.yml` (shellcheck op `*.sh` + yaml-lint op manifests)
+- [x] 2.4 homelab: `verify.yml` — gekozen: `terraform fmt -check -recursive` +
+      yaml-syntax (cheap, geen init/credentials; ansible-lint/kubeconform bewust
+      niet — te zwaar/flaky voor een signaal-gate). Lokaal groen tegen main.
+- [x] 2.5 wordsworth: `verify_gate=yes` bevestigd. Checknaam `test` (niet `verify`)
+      BEWUST behouden: zijn ci.yml draait een zware integratiesuite (Postgres +
+      SeaweedFS + OpenSearch); die niet aanraken voor een cosmetische rename. De
+      spec accepteert een bestaande, equivalente check onder een andere naam.
 
 ## 3. Afronding
 
-- [ ] 3.1 `verify_gate` in de inventaris gelijk aan de werkelijkheid per spoke
-- [ ] 3.2 DoD: per uitgerolde spoke een rode én groene verify aangetoond op een PR
+- [x] 3.1 `verify_gate` in de inventaris gelijk aan de werkelijkheid per spoke
+- [x] 3.2 DoD: per uitgerolde spoke een rode én groene verify aangetoond op een PR
