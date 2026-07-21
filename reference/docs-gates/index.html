@@ -9297,9 +9297,14 @@ jobs:
       code_paths: &quot;dispatch/,worker/,cage/,report/,orchestrator/&quot;
       drift_mode: &quot;fail&quot;   # of &quot;warn&quot; tijdens inregelen
 </code></pre>
-<p>Kies <code>code_paths</code> per repo: de mappen met productiegedrag, niet tests/CI/docs.
-Zet <code>drift_mode: warn</code> zolang een spoke het patroon nog inregelt; standaard is
-<code>fail</code>. Maak de check daarna verplicht via branch protection op <code>main</code>.</p>
+<p>Kies <code>code_paths</code> per repo: de mappen met productiegedrag, niet tests/CI/docs.</p>
+<p><strong>Handhaving (solo-repo's).</strong> Deze repo's hebben één beheerder, dus de gates
+draaien als <em>signaal</em>, niet als harde blokkade: geen branch protection, en
+<code>drift_mode: fail</code> overal. Zonder branch protection blokkeert <code>fail</code> niets — het
+geeft een eerlijke rode X als de docs achterlopen, waarna jij fixt of het label
+zet. <code>warn</code> is dan zinloos (altijd groen, ook bij drift) en alleen bedoeld als
+tijdelijke demping tijdens inregelen. In een team-context maakt branch
+protection de check pas écht blokkerend; op een solo-repo is dat ceremonie.</p>
 <h2 id="wanneer-het-label-gerechtvaardigd-is">Wanneer het label gerechtvaardigd is</h2>
 <p><code>docs-drift-ok</code> is voor een code-wijziging die aantoonbaar geen docs-impact
 heeft (een interne refactor, een bugfix zonder gedragswijziging naar buiten).
