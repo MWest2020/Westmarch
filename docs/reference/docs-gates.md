@@ -43,8 +43,14 @@ jobs:
 ```
 
 Kies `code_paths` per repo: de mappen met productiegedrag, niet tests/CI/docs.
-Zet `drift_mode: warn` zolang een spoke het patroon nog inregelt; standaard is
-`fail`. Maak de check daarna verplicht via branch protection op `main`.
+
+**Handhaving (solo-repo's).** Deze repo's hebben één beheerder, dus de gates
+draaien als *signaal*, niet als harde blokkade: geen branch protection, en
+`drift_mode: fail` overal. Zonder branch protection blokkeert `fail` niets — het
+geeft een eerlijke rode X als de docs achterlopen, waarna jij fixt of het label
+zet. `warn` is dan zinloos (altijd groen, ook bij drift) en alleen bedoeld als
+tijdelijke demping tijdens inregelen. In een team-context maakt branch
+protection de check pas écht blokkerend; op een solo-repo is dat ceremonie.
 
 ## Wanneer het label gerechtvaardigd is
 

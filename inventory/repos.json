@@ -878,7 +878,7 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "KERNSET (wave 1). Besluit Mark 2026-07-12: repo blijft PUBLIC. Geen LICENSE. Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Besluit 2026-07-14: publieke import; geen private build meer nodig voor homelab. Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths infra-mappen (warn).",
+    "notes": "KERNSET (wave 1). Besluit Mark 2026-07-12: repo blijft PUBLIC. Geen LICENSE. Seed apply-docs-contract + .mcp.json gemerged 2026-07-12. Docs-contract-PR gemerged 2026-07-12 (habitat-run, reviewer PASS). Besluit 2026-07-14: publieke import; geen private build meer nodig voor homelab. Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths infra-mappen (fail; warn->fail 2026-07-21, signaal-model).",
     "contract_applied": "yes"
   },
   {
@@ -1606,7 +1606,7 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "Nice-to-have (wave 2, besluit Mark 2026-07-12).  Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths skills/,src/,config/ (warn).",
+    "notes": "Nice-to-have (wave 2, besluit Mark 2026-07-12).  Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths skills/,src/,config/ (fail; warn->fail 2026-07-21, signaal-model).",
     "contract_applied": "yes"
   },
   {
@@ -2166,7 +2166,7 @@
     "needs_mcp_json": "yes",
     "needs_docs": "yes",
     "handbook_import": "yes",
-    "notes": "Privaat, actieve agent-ontwikkeling; inhoud onbekend gevoelig -> fail closed. Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths config/,scripts/,sources/ (warn).",
+    "notes": "Privaat, actieve agent-ontwikkeling; inhoud onbekend gevoelig -> fail closed. Docs-contract-PR gemerged 2026-07-13 (habitat wave 2, reviewer PASS). Docs-gates uitgerold 2026-07-20 (add-docs-gates): caller -> handbook@main, code_paths config/,scripts/,sources/ (fail; warn->fail 2026-07-21, signaal-model).",
     "contract_applied": "yes"
   }
 ]

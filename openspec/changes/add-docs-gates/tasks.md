@@ -25,7 +25,10 @@
 - [x] 3.3 wordsworth
 - [x] 3.4 zettelkast
 - [x] 3.5 skill-forge
-- [ ] 3.6 Per spoke: check verplicht maken op main (branch protection — Mark)
+- [x] 3.6 Besloten (Mark 2026-07-21): GEEN branch protection op de solo-repo's — de
+      zichtbare gates-check is het signaal; blokkeren is teamceremonie. Alle 5 spokes
+      op drift_mode fail (warn zou altijd groen zijn, ook bij drift). Zettelkast kon
+      sowieso niet (privé, gratis plan).
 
 ## 4. Afronding
 
