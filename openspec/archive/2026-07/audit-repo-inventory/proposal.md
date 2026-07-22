@@ -40,8 +40,8 @@ read-only fundering onder changes 2 en 3.
 
 ## Beslistabel tiers
 
-- **active**: commits in de laatste 90 dagen ÓF genoemd in een lopend extern
-  traject (zeef, openanonymiser, wanderer, estafette) ÓF homelab-infra die
+- **active**: commits in de laatste 90 dagen ÓF actief in gebruik
+  (zeef, openanonymiser, wanderer, estafette) ÓF homelab-infra die
   draait. → `needs_docs: yes`, `needs_mcp_json: yes` als er Claude Code-sessies
   in draaien (heuristiek: aanwezigheid van `.claude/`, `CLAUDE.md`, of
   `openspec/`), `handbook_import: yes`.

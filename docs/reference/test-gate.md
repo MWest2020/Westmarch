@@ -18,7 +18,7 @@ solo-repo's (zie [docs-gates](docs-gates.md#aanhaken-caller-template)).
 
 ## Template — Python (uv + pytest)
 
-Voor spokes met een `pyproject.toml` en `tests/` (skill-forge, zettelkast, wordsworth):
+Voor spokes met een `pyproject.toml` en een `tests/`-map (bv. skill-forge, wordsworth):
 
 ```yaml
 name: verify
