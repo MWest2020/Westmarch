@@ -6,6 +6,11 @@
 site_name: Handbook
 site_url: https://mwest2020.github.io/handbook/
 repo_url: https://github.com/MWest2020/handbook
+
+# Privé-pagina's worden nooit publiek gerenderd (defense-in-depth; de bron is
+# ook gitignored). De private build (mkdocs.private.yml) heft dit op.
+exclude_docs: |
+  private/
 theme:
   name: material
   language: nl

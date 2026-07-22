@@ -1,5 +1,8 @@
 # Private homelab-context: concrete hostnamen/netwerkdetails, nooit publiek
 openspec/private/
+# Private docs-pagina's: alleen gematerialiseerd voor de private build (symlink
+# naar openspec/private/), nooit committen — anders alsnog publicatie (req 2).
+docs/private/
 
 # Secrets
 .env
