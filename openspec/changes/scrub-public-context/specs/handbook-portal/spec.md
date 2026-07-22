@@ -4,8 +4,7 @@
 
 ### Requirement: Hub-eigen pagina's lekken geen private of financiële context
 
-De hub-eigen pagina's die in de publieke build verschijnen (index,
-conventies, homelab-verwijzing) SHALL géén van de volgende bevatten:
+Hub-eigen pagina's in de publieke build (index, conventies, homelab-verwijzing) SHALL geen van de onderstaande drie categorieën bevatten.
 
 1. subsidie- of financieringstrajecten — welk programma, fonds of
    aanvraagtraject dan ook; niet als label bij een repo, niet als

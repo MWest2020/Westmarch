@@ -7,9 +7,13 @@
       door één kale verwijzingszin.
 - [x] 1.2 `docs/homelab/herstel.md`: private repo-namen en
       redactie-datum verwijderd; alleen de functionele uitleg blijft.
-- [ ] 1.3 Private overzichtspagina toevoegen die alleen in
-      `mkdocs.private.yml` genavigeerd wordt (template staat in de
-      gitignored `openspec/private/` van het Westmarch-spec-repo).
+- [x] 1.3 Beheer-host-actie (buiten dit publieke repo): de private
+      overzichtspagina + `mkdocs.private.yml`-nav leven in de gitignored
+      overlay op de beheer-host — bewust NIET in dit publieke repo (zou de
+      inhoud alsnog publiceren, req 2). De publieke `--strict` build is
+      geverifieerd groen zónder die pagina; de index verwijst er neutraal
+      naar. Onderhoud van de private pagina hoort bij de private build op de
+      host (Mark), niet bij deze publieke change.
 
 ## 2. Repo-bestanden (scope-besluiten Mark, 2026-07-14)
 
@@ -29,7 +33,13 @@
 
 ## 3. Sluitstuk
 
-- [ ] 3.1 Spec-delta mergen in de vastgestelde specs en change archiveren
-      conform propose→apply→archive.
-- [ ] 3.2 Westmarch-spec-repo synchroon houden (delta staat daar al,
-      commit 2026-07-14).
+- [x] 3.1 Spec-delta gemerged in `openspec/specs/handbook-portal/` en change
+      gearchiveerd (openspec archive).
+- [x] 3.2 Achterhaald: er is geen apart Westmarch-spec-repo meer — Westmarch is
+      op 2026-07-12 hernoemd tot `handbook` (dit repo). De spec-delta wordt via
+      3.1 onderdeel van dít repo; niets externs om synchroon te houden.
+
+> Verificatie bij het afmaken (2026-07-22): volledige publieke repo gescand op
+> `private-only` repo-namen in gerenderde pagina's en op financierings-/
+> trajectkoppelingen. Twee residuen gefixt (test-gate.md noemde `zettelkast`;
+> archief-proposal had nog "extern traject (repos…)"). Publieke build groen.
