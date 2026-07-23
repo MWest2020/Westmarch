@@ -27,5 +27,14 @@ if [ ! -f mkdocs.private.yml ]; then
   exit 1
 fi
 
+# Materialiseer de private-only pagina's onder docs/private/ (gitignored, uit de
+# publieke build gesloten via exclude_docs). Idempotent; symlinks, geen kopie.
+mkdir -p docs/private
+#  - de canonieke openspec-specs (governance) zichtbaar in de private build
+ln -sfn ../../openspec/specs docs/private/specs
+#  - de homelab-context, alleen als de gitignored bron aanwezig is
+[ -f openspec/private/homelab-context.md ] \
+  && ln -sfn ../../openspec/private/homelab-context.md docs/private/homelab-context.md
+
 echo "[build-private] private build → site-private/ (niet publiceren)"
 exec uv run python -m mkdocs build -f mkdocs.private.yml -d site-private "$@"
